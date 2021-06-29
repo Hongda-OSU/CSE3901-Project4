@@ -1,3 +1,10 @@
+Shared Header
+  Contains all current header information, along with navigation bar
+
+About
+  Source: Introduction, Appointments, Consulting, Education (homepage)
+  Changes: Split up Introduction, none otherwise?
+
 Media and Press
   Source: Media and Press (homepage)
   Changes: Make into a table (Title, Date, Medium, Source, Link)
@@ -9,5 +16,3 @@ Publications
 Teaching
   Source: Teaching
   Changes: Make into a table (Semester, Name, Number)?
-
-etc.
