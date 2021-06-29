@@ -2,10 +2,10 @@
 ### Static Web Design
 
 ### Roles
-* Overall Project Manager:
-* Coding Manager:
-* Testing Manager:
-* Documentation:
+* Overall Project Manager: Sam Gernstetter
+* Coding Manager: Madison Graziani
+* Testing Manager: Drew Jackson
+* Documentation: Hongda Lin
 
 ### Contributions
 Please list who did what for each part of the project.
