@@ -5,6 +5,10 @@ About
   Source: Introduction, Appointments, Consulting, Education (homepage)
   Changes: Split up Introduction, none otherwise?
 
+Accomplishments
+  Source: Noteworthy (homepage)
+  Changes: None?
+
 Media and Press
   Source: Media and Press (homepage)
   Changes: Make into a table (Title, Date, Medium, Source, Link)
