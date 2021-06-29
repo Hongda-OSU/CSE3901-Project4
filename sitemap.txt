@@ -1,0 +1,13 @@
+Media and Press
+  Source: Media and Press (homepage)
+  Changes: Make into a table (Title, Date, Medium, Source, Link)
+
+Publications
+  Source: Publications
+  Changes: None?
+
+Teaching
+  Source: Teaching
+  Changes: Make into a table (Semester, Name, Number)?
+
+etc.
