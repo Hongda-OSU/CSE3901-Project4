@@ -3,3 +3,7 @@
 .DS_Store
 .sass-cache
 build/
+Gemfile
+config.rb
+Gemfile.lock
+.idea
