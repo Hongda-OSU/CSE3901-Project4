@@ -17,7 +17,10 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     contracts (0.13.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
@@ -34,6 +37,8 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
+    http-cookie (1.0.4)
+      domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
@@ -42,6 +47,17 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    mechanize (2.8.1)
+      addressable (~> 2.7)
+      domain_name (~> 0.5, >= 0.5.20190701)
+      http-cookie (~> 1.0, >= 1.0.3)
+      mime-types (~> 3.0)
+      net-http-digest_auth (~> 1.4, >= 1.4.1)
+      net-http-persistent (>= 2.5.2, < 5.0.dev)
+      nokogiri (~> 1.11, >= 1.11.2)
+      rubyntlm (~> 0.6, >= 0.6.3)
+      webrick (~> 1.7)
+      webrobots (~> 0.1.2)
     memoist (0.16.2)
     middleman (4.4.0)
       coffee-script (~> 2.2)
@@ -83,7 +99,15 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.0225)
     minitest (5.14.4)
+    net-http-digest_auth (1.4.1)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
+    nokogiri (1.11.7-x86_64-linux)
+      racc (~> 1.4)
     padrino-helpers (0.15.1)
       i18n (>= 0.6.7, < 2)
       padrino-support (= 0.15.1)
@@ -92,6 +116,7 @@ GEM
     parallel (1.20.1)
     parslet (2.0.0)
     public_suffix (4.0.6)
+    racc (1.5.2)
     rack (2.2.3)
     rack-livereload (0.3.17)
       rack
@@ -99,6 +124,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
+    rubyntlm (0.6.3)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -111,16 +137,22 @@ GEM
       concurrent-ruby (~> 1.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
     webrick (1.7.0)
+    webrobots (0.1.2)
     zeitwerk (2.4.2)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  mechanize
   middleman (~> 4.2)
   middleman-autoprefixer (~> 3.0.0)
   middleman-livereload (~> 3.4.7)
+  nokogiri
   tzinfo-data
   wdm (~> 0.1)
 
