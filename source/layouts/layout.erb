@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" href="stylesheets/site.css" rel="stylesheet" />
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Project-4-Agile-Web-Apps" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+
+  <ul>
+    <!-- Redirection -->
+    <li><a href="index.html"><button>Home</button></a></li>
+    <li><a href="publication.html"><button>Publication</button></a></li>
+
+  </ul>
+
+    <%= yield %>
+
+  </body>
+</html>
