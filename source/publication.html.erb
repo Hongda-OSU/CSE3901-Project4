@@ -5,14 +5,39 @@
   <h1 class="publication_header">James W. Davis, Publications</h1>
 </div>
 
+
+<!-- PUBLICATION CATEGORIZATION -->
+<div>
+  <table class="publication_table">
+    <thead>
+      <tr>
+        <% %w[Title Authors Source Link].each do |element|%>
+          <% if element == "Title" %>
+            <th id="pt_title">
+          <% elsif element == "Authors"%>
+            <th id="pt_author">
+          <% elsif element == "Source"%>
+            <th id="pt_source">
+          <% elsif element == "Link"%>
+            <th id="pt_link">
+          <% end %>
+          <%= element%></th>
+        <% end %>
+        </tr>
+    </thead>
+  </table>
+</div>
+
+
 <!-- PUBLICATION CONTENT -->
 <div>
-  <!-- Use Mechanize and Nokogiri to get title since each publication must have a title -->
+  <!-- Use Mechanize and Nokogiri to get titles, authors, sources and links -->
   <%
     agent = Mechanize.new
     page = agent.get "https://web.cse.ohio-state.edu/~davis.1719/publications.html"
-    samples = page.xpath('//li')
+    resources = page.xpath('//li')
     name = "J. Davis"
+    count = 0
     titles = Array.new
     authors = Array.new
     sources = Array.new
@@ -25,9 +50,10 @@
                     "OSU Dept. Computer and Information Science Technical Report OSU-CISRC-11/00-TR25, November 2000.",
                     "MIT Technical Report #487, March 1999."]
 
-    samples.each do |sample|
-      publication = sample.to_s
+    resources.each do |resource|
+      publication = resource.to_s
       len = publication.length
+      count+=1
 
       #get the publication title
       m_title = publication.match /".*"|“.*”/
@@ -87,18 +113,20 @@
     </tr>
     </thead>
     <tbody>
-    <% 100.times do %>
+    <% count.times do %>
     <tr>
-      <td><%= titles.shift %></td>
-      <td><%= authors.shift %></td>
-      <td><%= sources.shift %></td>
+      <td class="pc_title"><%= titles.shift %></td>
+      <td class="pc_author"><%= authors.shift %></td>
+      <td class="pc_source"><%= sources.shift %></td>
+      <td class="pc_link">
       <% if links[0] == "None" %>
-        <td><%= links.shift %></td>
+        <%= links.shift %>
       <% elsif links[0].include? "audiomere" or links[0].include? "https"%>
-        <td><a href="<%= links.shift %>">Link</a></td>
+        <a href="<%= links.shift %>">Link</a>
       <% else %>
-        <td><a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a></td>
+        <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
       <% end %>
+      </td>
     </tr>
     <% end %>
 
