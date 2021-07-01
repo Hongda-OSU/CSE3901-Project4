@@ -10,7 +10,7 @@
   <table class="publication_table">
     <thead>
       <tr>
-        <% ["Title","Authors","Source","Link"].each do |element|%>
+        <% %w[Title Authors Source Link].each do |element|%>
         <th><%= element%></th>
         <% end %>
      </tr>
@@ -33,7 +33,7 @@
     links = Array.new
     # these are the source that don't have a pattern
     weird_source = ["arXiv:2007.01386v1 [cs.LG], July 2020.",
-                    "Commericialization of audio algorithm and software for multi-channel audio polarity optimization, 2015.",
+                    "Commercialization of audio algorithm and software for multi-channel audio polarity optimization, 2015.",
                     "OSU Dept. Computer Science and Engineering Technical Report OSU-CISRC-11/11-TR34, 2011.",
                     "OSU Dept. Computer Science and Engineering Technical Report OSU-CISRC-6/10-TR13, 2010.",
                     "OSU Dept. Computer and Information Science Technical Report OSU-CISRC-11/00-TR25, November 2000.",
