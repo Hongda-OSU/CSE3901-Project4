@@ -1,0 +1,48 @@
+body {
+    color: #e8e8e8;
+    background: black;
+}
+h1 {
+    height: 400px;
+    margin: 0;
+    padding: 0 0 0 0;
+    background: #e8e8e8;
+    font-style: italic;
+    color: #333333;
+}
+a{
+    color: #b00;
+}
+a:visited {
+    color: #e8e8e8;
+}
+
+.link_buttons {
+    background: #333333;
+    color: #990100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px #990100;
+    margin-inline: auto;
+}
+
+img {
+    border-radius: 0px;
+    display: block;
+    margin-left: 0;
+    padding: 0;
+    width: 400px;
+    alignment: bottom;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 5px #990100;
+}
+li {
+    display: inline;
+    border: 5px #990100;
+    padding: 4px;
+}
