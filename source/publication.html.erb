@@ -11,9 +11,18 @@
     <thead>
       <tr>
         <% %w[Title Authors Source Link].each do |element|%>
-        <th><%= element%></th>
+          <% if element == "Title" %>
+            <th id="pt_title">
+          <% elsif element == "Authors"%>
+            <th id="pt_author">
+          <% elsif element == "Source"%>
+            <th id="pt_source">
+          <% elsif element == "Link"%>
+            <th id="pt_link">
+          <% end %>
+          <%= element%></th>
         <% end %>
-     </tr>
+        </tr>
     </thead>
   </table>
 </div>
@@ -97,16 +106,18 @@
     <tbody>
     <% count.times do %>
     <tr>
-      <td><%= titles.shift %></td>
-      <td><%= authors.shift %></td>
-      <td><%= sources.shift %></td>
+      <td class="pc_title"><%= titles.shift %></td>
+      <td class="pc_author"><%= authors.shift %></td>
+      <td class="pc_source"><%= sources.shift %></td>
+      <td class="pc_link">
       <% if links[0] == "None" %>
-        <td><%= links.shift %></td>
+        <%= links.shift %>
       <% elsif links[0].include? "audiomere" or links[0].include? "https"%>
-        <td><a href="<%= links.shift %>">Link</a></td>
+        <a href="<%= links.shift %>">Link</a>
       <% else %>
-        <td><a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a></td>
+        <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
       <% end %>
+      </td>
     </tr>
     <% end %>
 
