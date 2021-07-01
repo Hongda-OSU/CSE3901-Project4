@@ -1,0 +1,22 @@
+---
+title: Media and Press
+---
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Date</th>
+    <th>Medium</th>
+    <th>Source</th>
+    <th>Link</th>
+  </tr>
+  <% data.media.each do |title, date, medium, source, link| %>
+  <tr>
+    <td><%= title %></td>
+    <td><%= date %></td>
+    <td><%= medium %></td>
+    <td><%= source %></td>
+    <td><%= link %></td>
+  </tr>
+  <% end %>
+</table>
