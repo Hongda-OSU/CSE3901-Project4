@@ -1,6 +1,7 @@
 
+
 /* Index page */
-button{
+button {
   background: none;
   color:orangered;
   border: 2px solid #ffa260;
@@ -8,10 +9,9 @@ button{
   margin: 5px;
   font-size: 1em;
   transition: color 0.5s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-
 }
 
-button:hover{
+button:hover {
   border-color: #f1ff1c;
   color:darkblue;
   box-shadow: 0 0.5em 0.5em -0.4em;
@@ -36,16 +36,16 @@ button:hover{
 }
 
 /* Publication Page */
-.publication_header{
+.publication_header {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.publication_table{
+.publication_table {
   width: 100%;
 }
 
-.publication_table th{
+.publication_table th, td {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
