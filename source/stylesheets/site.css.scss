@@ -58,35 +58,43 @@ button:hover{
 
 }
 
+/* Create by Hongda Lin (7/1/2021) */
 #pt_title, #pt_author, #pt_source{
   width: 30%;
   font-size: 30px;
   border: 8px solid red;
   border-left: none;
   border-right: none;
+  background-color: azure;
   text-align: center;
   padding: 10px;
 }
 
+/* Create by Hongda Lin (7/1/2021) */
 #pt_link{
   width: 10%;
   font-size: 30px;
   border: 8px solid red;
   border-left: none;
   border-right: none;
+  background-color: azure;
   text-align: center;
   padding: 10px;
 }
 
+/* Create by Hongda Lin (7/1/2021) */
 .pc_title, .pc_author, .pc_source{
   width: 30%;
+  border: 2px solid black;
   text-align: center;
-  padding: 15px;
+  padding: 30px;
 }
 
+/* Create by Hongda Lin (7/1/2021) */
 .pc_link{
   text-align: center;
-  padding: 15px;
+  border: 2px solid black;
+  padding: 30px;
 }
 
 /* Create by Hongda Lin (6/29/2021) */
