@@ -20,12 +20,13 @@
 
 <!-- PUBLICATION CONTENT -->
 <div>
-  <!-- Use Mechanize and Nokogiri to get title since each publication must have a title -->
+  <!-- Use Mechanize and Nokogiri to get titles, authors, sources and links -->
   <%
     agent = Mechanize.new
     page = agent.get "https://web.cse.ohio-state.edu/~davis.1719/publications.html"
-    samples = page.xpath('//li')
+    resources = page.xpath('//li')
     name = "J. Davis"
+    count = 0
     titles = Array.new
     authors = Array.new
     sources = Array.new
@@ -38,9 +39,10 @@
                     "OSU Dept. Computer and Information Science Technical Report OSU-CISRC-11/00-TR25, November 2000.",
                     "MIT Technical Report #487, March 1999."]
 
-    samples.each do |sample|
-      publication = sample.to_s
+    resources.each do |resource|
+      publication = resource.to_s
       len = publication.length
+      count+=1
 
       #get the publication title
       m_title = publication.match /".*"|“.*”/
@@ -93,7 +95,7 @@
 
   <table class="publication_content">
     <tbody>
-    <% 100.times do %>
+    <% count.times do %>
     <tr>
       <td><%= titles.shift %></td>
       <td><%= authors.shift %></td>
