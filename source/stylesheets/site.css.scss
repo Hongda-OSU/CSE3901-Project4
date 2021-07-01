@@ -1,5 +1,4 @@
 
-
 /* Index page */
 
 /* Create by Hongda Lin (6/29/2021) */
@@ -11,6 +10,7 @@ button{
   margin: 5px;
   font-size: 1em;
   transition: color 0.5s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+
 }
 
 /* Create by Hongda Lin (6/29/2021) */
@@ -21,6 +21,22 @@ button:hover{
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
   cursor: pointer;
+}
+
+/* media page */
+.media_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.media_table {
+  width: 100%;
+}
+
+.media_table th, .media_table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
 }
 
 /* Publication Page */
@@ -56,8 +72,8 @@ button:hover{
   width: 10%;
   font-size: 30px;
   border: 8px solid red;
-  border-left: 1px dashed black;
-  border-right: 1px dashed black;
+  border-left: none;
+  border-right: none;
   text-align: center;
   padding: 10px;
 }
@@ -68,11 +84,10 @@ button:hover{
   padding: 15px;
 }
 
-#pt_link, .pc_link{
+.pc_link{
   text-align: center;
   padding: 15px;
 }
-
 
 /* Create by Hongda Lin (6/29/2021) */
 .publication_content td:nth-child(3){
