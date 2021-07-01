@@ -4,8 +4,8 @@
 /* Create by Hongda Lin (6/29/2021) */
 button{
   background: none;
-  color:orangered;
-  border: 2px solid #ffa260;
+  color: #00008B;
+  border: 2px solid #FFD700;
   padding: 5px 6px;
   margin: 5px;
   font-size: 1em;
@@ -14,9 +14,10 @@ button{
 }
 
 /* Create by Hongda Lin (6/29/2021) */
+/* Cool effect when hover over the button */
 button:hover{
-  border-color: #f1ff1c;
-  color:darkblue;
+  border-color: #FF1493;
+  color:red;
   box-shadow: 0 0.5em 0.5em -0.4em;
   transform: translateY(-0.25em);
   cursor: pointer;
@@ -26,20 +27,53 @@ button:hover{
 
 /* Create by Hongda Lin (6/29/2021) */
 .publication_header{
+  padding: 10px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 60px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 /* Create by Hongda Lin (6/29/2021) */
 .publication_table{
   width: 100%;
 }
-/* Create by Hongda Lin (6/29/2021) */
-.publication_table th, td{
-  width: 25%;
-  border: 1px solid #dddddd;
+
+.publication_content{
+
+}
+
+#pt_title, #pt_author, #pt_source{
+  width: 30%;
+  font-size: 30px;
+  border: 8px solid red;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#pt_link{
+  width: 10%;
+  font-size: 30px;
+  border: 8px solid red;
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
+  text-align: center;
+  padding: 10px;
+}
+
+.pc_title, .pc_author, .pc_source{
+  width: 30%;
   text-align: center;
   padding: 15px;
 }
+
+#pt_link, .pc_link{
+  text-align: center;
+  padding: 15px;
+}
+
+
 /* Create by Hongda Lin (6/29/2021) */
 .publication_content td:nth-child(3){
   font-style: italic;
