@@ -181,4 +181,22 @@ div > h3{
 
 }
 
->>>>>>> e0f8ee3aebe409b049f9a6054aa470fe79da0f61
+/* teaching page */
+
+/* Created 7/1/21 by Samuel Gernstetter */
+.teaching_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Created 7/1/21 by Samuel Gernstetter */
+.teaching_table {
+  width: 100%;
+}
+
+/* Created 7/1/21 by Samuel Gernstetter */
+.teaching_table th, .teaching_table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
