@@ -1,20 +1,32 @@
 body {
-    color: #e8e8e8;
-    background: black;
+    color: #87919E;
+    background: #333333;
 }
 h1 {
-    height: 400px;
+    height: 50px;
     margin: 0;
     padding: 0 0 0 0;
-    background: #e8e8e8;
+    background: #87919E;
     font-style: italic;
     color: #333333;
+    border-right: 20px #990100;
+    text-align: center;
 }
+
+h3 {
+    height: 25px;
+    background: #87919E;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
 a{
     color: #b00;
 }
 a:visited {
-    color: #e8e8e8;
+    color: #87919E;
 }
 
 .link_buttons {
@@ -34,6 +46,7 @@ img {
     padding: 0;
     width: 400px;
     alignment: bottom;
+    float: right;
 }
 ul {
     list-style-type: none;
@@ -45,4 +58,24 @@ li {
     display: inline;
     border: 5px #990100;
     padding: 4px;
+}
+
+.rectangleScarlet {
+    height: 25px;
+    background-color: #990100;
+}
+
+footer {
+    background-color: #87919E;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    border-right: 20px #990100;
+}
+
+p {
+    background: #87919E;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
