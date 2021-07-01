@@ -1,5 +1,7 @@
 
 /* Index page */
+
+/* Create by Hongda Lin (6/29/2021) */
 button{
   background: none;
   color:orangered;
@@ -11,6 +13,7 @@ button{
 
 }
 
+/* Create by Hongda Lin (6/29/2021) */
 button:hover{
   border-color: #f1ff1c;
   color:darkblue;
@@ -20,17 +23,24 @@ button:hover{
 }
 
 /* Publication Page */
+
+/* Create by Hongda Lin (6/29/2021) */
 .publication_header{
   text-align: center;
   margin-bottom: 50px;
 }
-
+/* Create by Hongda Lin (6/29/2021) */
 .publication_table{
   width: 100%;
 }
-
-.publication_table th{
+/* Create by Hongda Lin (6/29/2021) */
+.publication_table th, td{
+  width: 25%;
   border: 1px solid #dddddd;
   text-align: center;
-  padding: 8px;
+  padding: 15px;
+}
+/* Create by Hongda Lin (6/29/2021) */
+.publication_content td:nth-child(3){
+  font-style: italic;
 }
