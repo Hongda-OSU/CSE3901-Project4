@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link type="text/css" href="stylesheets/site.css" rel="stylesheet" />
+    <!-- Google Font used in Publication Page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Project-4-Agile-Web-Apps" %></title>
     <%= stylesheet_link_tag "site" %>
@@ -10,12 +14,12 @@
   </head>
   <body>
 
-  <ul>
+  <ul class="nav_bar">
     <!-- Redirection -->
-    <li><a href="index.html"><button>Home</button></a></li>
-    <li><a href="publication.html"><button>Publication</button></a></li>
-    <li><a href="directions.html"><button>Directions</button></a></li>
-
+    <li><a href="index.html">Home</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="publication.html">Publication</a></li>
+    <li><a href="directions.html">Directions</a></li>
   </ul>
 
     <%= yield %>
