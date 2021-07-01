@@ -5,6 +5,7 @@
   <h1 class="publication_header">James W. Davis, Publications</h1>
 </div>
 
+
 <!-- PUBLICATION CATEGORIZATION -->
 <div>
   <table class="publication_table">
@@ -26,6 +27,7 @@
     </thead>
   </table>
 </div>
+
 
 <!-- PUBLICATION CONTENT -->
 <div>
@@ -102,7 +104,14 @@
 
 
 
-  <table class="publication_content">
+  <table class="publication_table">
+    <thead>
+    <tr>
+      <% %w[Title Authors Source Link].each do |element|%>
+        <th><%= element%></th>
+      <% end %>
+    </tr>
+    </thead>
     <tbody>
     <% count.times do %>
     <tr>
