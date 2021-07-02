@@ -1,12 +1,12 @@
 <!-- Created by Hongda Lin (6/29/2021) -->
 
 <!-- PUBLICATION TITLE -->
-<div>
+<div class="p_div">
   <h1 class="publication_header">James W. Davis, Publications</h1>
 </div>
 
 <!-- PUBLICATION CATEGORIZATION -->
-<div>
+<div class="p_div">
   <table class="publication_table">
     <thead>
       <tr>
@@ -28,7 +28,7 @@
 </div>
 
 <!-- PUBLICATION CONTENT -->
-<div>
+<div class="p_div">
   <!-- Use Mechanize and Nokogiri to get titles, authors, sources and links -->
   <%
     agent = Mechanize.new
@@ -100,8 +100,6 @@
     end
   %>
 
-
-
   <table class="publication_content">
     <tbody>
     <% count.times do %>
@@ -113,9 +111,9 @@
       <% if links[0] == "None" %>
         <%= links.shift %>
       <% elsif links[0].include? "audiomere" or links[0].include? "https"%>
-        <a href="<%= links.shift %>">Link</a>
+          <a href="<%= links.shift %>">Link</a>
       <% else %>
-        <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
+          <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
       <% end %>
       </td>
     </tr>
