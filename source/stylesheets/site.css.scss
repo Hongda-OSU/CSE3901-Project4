@@ -6,16 +6,6 @@
   color: #87919E;
   background: #333333;
 }
-.h1Home {
-  height: 50px;
-  margin: 0;
-  padding: 0 0 0 0;
-  background: #87919E;
-  font-style: italic;
-  color: #333333;
-  border-right: 20px #990100;
-  text-align: center;
-}
 
 .h3Home {
   height: 25px;
@@ -24,13 +14,6 @@
   color: #333333;
   margin: 0;
   padding: 0;
-}
-
-a{
-  color: #b00;
-}
-a:visited {
-  color: #87919E;
 }
 
 .link_buttons {
@@ -114,10 +97,6 @@ a:visited {
 }
 
 /* media page */
-.media_header {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
 .media_table {
   width: 100%;
@@ -130,15 +109,6 @@ a:visited {
 }
 
 /* Publication Page */
-
-/* Create by Hongda Lin (6/29/2021) */
-.publication_header{
-  padding: 10px;
-  font-family: 'Kaushan Script', cursive, sans-serif;
-  font-size: 60px;
-  text-align: center;
-  margin-bottom: 10px;
-}
 /* Create by Hongda Lin (6/29/2021) */
 .publication_table{
   width: 100%;
@@ -192,7 +162,7 @@ a:visited {
 /* Directions Page */
 /* Create by Madison Graziani on 7/1/2021 */
 
-.directions_title{
+h1 {
   border-style: double;
   border-width: 7px;
   border-radius: 25px;
@@ -264,13 +234,9 @@ hr.break{
 /* teaching page */
 
 /* Created 7/1/21 by Samuel Gernstetter */
-.teaching_header {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
 /* Created 7/1/21 by Samuel Gernstetter */
-.teaching_table {
+table {
   width: 100%;
 }
 
