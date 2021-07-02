@@ -2,23 +2,8 @@
 title: Media and Press
 ---
 
-<h1 class="media_header">
-  Media and Press
-</h1>
+<!-- Created 6/30/21 by Samuel Gernstetter -->
 
-<table class="media_table">
-  <tr>
-    <th>Title</th>
-    <th>Date</th>
-    <th>Medium</th>
-    <th>Source</th>
-  </tr>
-  <% data.media.each do |title, date, medium, source| %>
-  <tr>
-    <td><%= title %></td>
-    <td><%= date %></td>
-    <td><%= medium %></td>
-    <td><%= source %></td>
-  </tr>
-  <% end %>
-</table>
+<h1 class="media_header">Media and Press</h1>
+
+<%= partial "table", :locals => { :class_name => 'media_table', :headers => %w[Title Date Medium Source], :filename => data.media } %>

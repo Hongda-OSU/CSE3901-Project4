@@ -1,0 +1,16 @@
+<!-- Created 7/1/21 by Samuel Gernstetter -->
+
+<table class="<%= "#{class_name}" %>">
+  <tr>
+    <% headers.each do |header| %>
+    <th><%= header %></th>
+    <% end %>
+  </tr>
+  <% filename.each do |row| %>
+  <tr>
+    <% row.each do |cell| %>
+    <td><%= cell %></td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
