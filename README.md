@@ -10,6 +10,20 @@
 ### Contributions
 Please list who did what for each part of the project.
 Also list if people worked together (pair programmed) on a particular section.
-
-*Drew Jackson
-  Wrote the html and css for the home page, created navbar, selected color scheme, made links scarlet to grey, created yml pages.
+  
+* Hongda Lin: 
+  * Wrote the Publication page
+  * Wrote the css rules for Publication page
+          
+* Drew Jackson: 
+  * Wrote the HTML and CSS for the home page
+  * Created yml pages
+  * Created footer
+            
+* Madison Graziani: 
+  * Wrote the Directions page
+  * Created the navigation bar
+  * Made footer into a partial
+                   
+* Samuel Gernstetter: 
+  * 
