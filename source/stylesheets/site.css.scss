@@ -2,6 +2,28 @@
 /* Index page */
 
 /* Drew */
+.bodyHome {
+  color: #87919E;
+  background: #333333;
+}
+
+.h3Home {
+  height: 25px;
+  background: #333333;
+  text-align: center;
+  color: #87919E;
+  margin: 0;
+  padding: 0;
+}
+
+.h5Home {
+  height: 25px;
+  background: #333333;
+  text-align: center;
+  color: #87919E;
+  margin: 0;
+  padding: 0;
+}
 
 .link_buttons {
   background: #333333;
@@ -13,13 +35,14 @@
   margin-inline: auto;
 }
 
-img {
+.imgHome {
   border-radius: 0px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
   padding: 0;
-  width: 500px;
+  width: 400px;
+  alignment: bottom;
+  float: right;
 }
 .ulHome {
   list-style-type: none;
@@ -31,6 +54,27 @@ img {
   display: inline;
   border: 5px #990100;
   padding: 4px;
+}
+
+.rectangleScarlet {
+  height: 25px;
+  background-color: #990100;
+}
+
+.footerHome {
+  background-color: #87919E;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  border-right: 20px #990100;
+}
+
+.pHome {
+  background: #87919E;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+
 }
 
  /**/
@@ -78,7 +122,11 @@ button:hover{
 
 /* media page */
 
-th, td {
+.media_table {
+  width: 100%;
+}
+
+.media_table th, .media_table td {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
@@ -99,6 +147,7 @@ th, td {
 
 /* Create by Hongda Lin (6/29/2021) */
 .publication_table{
+  width: 100%;
   padding: 20px 0px;
   background-color: hsl(0, 0%, 96%);
 }
@@ -177,7 +226,7 @@ body > p{
   font-family: Helvetica, sans-serif;
 }
 
-div {
+.directions_div{
   background-color: #efefef;
   padding: 25px;
   margin: 0 250px 0;
@@ -190,35 +239,35 @@ hr.break{
   width: 1400px;
 }
 
-ol{
+.directions_div > ol{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ol > li{
+.directions_div > ol > li{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ul > li{
+.directions_div > ul > li{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ul{
+.directions_div > ul{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ul > li > a:link{
+.directions_div > ul > li > a:link{
   color: #bb0000;
 }
 
-div > ul > li > a:visited{
+.directions_div > ul > li > a:visited{
   color: #525252;
 }
 
-div > h3{
+.directions_div > h3{
   text-align: left;
   margin: 25px auto 10px;
   width: 1200px;
@@ -233,3 +282,11 @@ div > h3{
 table {
   width: 100%;
 }
+
+/* Created 7/1/21 by Samuel Gernstetter */
+.teaching_table th, .teaching_table td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
