@@ -58,9 +58,7 @@
 /* Create by Hongda Lin (6/29/2021) */
 .publication_table{
   width: 100%;
-}
-.publication_content{
-
+  padding: 20px 0px;
 }
 /* Create by Hongda Lin (7/1/2021) */
 #pt_title, #pt_author, #pt_source{
@@ -69,9 +67,8 @@
   border: 8px solid red;
   border-left: none;
   border-right: none;
-  background-color: azure;
   text-align: center;
-  padding: 10px;
+  padding: 40px;
 }
 /* Create by Hongda Lin (7/1/2021) */
 #pt_link{
@@ -80,54 +77,34 @@
   border: 8px solid red;
   border-left: none;
   border-right: none;
-  background-color: azure;
   text-align: center;
-  padding: 10px;
+  padding: 40px;
 }
 /* Create by Hongda Lin (7/1/2021) */
 .pc_title, .pc_author, .pc_source{
   width: 30%;
-  border: 2px solid black;
   text-align: center;
-  padding: 30px;
+  font-family: "andale mono", "lucida console", monospace;
+  padding: 20px 10px 20px 10px;
+  line-height: 1.8;
+  font-size: 20px;
 }
 /* Create by Hongda Lin (7/1/2021) */
 .pc_link{
+  width: 10%;
   text-align: center;
-  border: 2px solid black;
-  padding: 30px;
+  padding: 20px 0px 20px 0px;
+  font-size: 20px;
 }
-/* Create by Hongda Lin (6/29/2021) */
-.publication_content button{
-  background: none;
-  color: #00008B;
-  border: 2px solid #FFD700;
-  padding: 5px 6px;
-  margin: 5px;
-  font-size: 1em;
-  transition: color 0.5s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-}
-/* Create by Hongda Lin (6/29/2021) */
-.publication_content button:hover{
-  border-color: #FF1493;
-  color:red;
-  box-shadow: 0 0.5em 0.5em -0.4em;
-  transform: translateY(-0.25em);
-  cursor: pointer;
-}
-
 /* Create by Hongda Lin (6/29/2021) */
 .publication_content td:nth-child(3){
   font-style: italic;
 }
 /* Create by Hongda Lin (7/1/2021) */
-.publication_content tr:nth-last-of-type(2n){
-  background-color: beige;
-}
-/* Create by Hongda Lin (7/1/2021) */
 .publication_content tr:nth-last-of-type(2n+1){
-  background-color: lightgray;
+  background-color: gainsboro;
 }
+
 
 /* Directions Page */
 /* Create by Madison Graziani on 7/1/2021 */
