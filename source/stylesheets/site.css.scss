@@ -1,34 +1,6 @@
 
 /* Index page */
 
-/* Create by Hongda Lin (6/29/2021) */
-/*
-button{
-  background: none;
-  color: #00008B;
-  border: 2px solid #FFD700;
-  padding: 5px 6px;
-  margin: 5px;
-  font-size: 1em;
-  transition: color 0.5s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-
-}
-
- */
-
-/* Create by Hongda Lin (6/29/2021) */
-/* Cool effect when hover over the button */
-/*
-button:hover{
-  border-color: #FF1493;
-  color:red;
-  box-shadow: 0 0.5em 0.5em -0.4em;
-  transform: translateY(-0.25em);
-  cursor: pointer;
-}
-
- */
-
 .nav_bar{
   list-style-type: none;
   margin: 0 0 20px;
@@ -75,7 +47,7 @@ button:hover{
 /* Create by Hongda Lin (6/29/2021) */
 .publication_header{
   padding: 10px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Kaushan Script', cursive, sans-serif;
   font-size: 60px;
   text-align: center;
   margin-bottom: 10px;
@@ -84,11 +56,9 @@ button:hover{
 .publication_table{
   width: 100%;
 }
-
 .publication_content{
 
 }
-
 /* Create by Hongda Lin (7/1/2021) */
 #pt_title, #pt_author, #pt_source{
   width: 30%;
@@ -100,7 +70,6 @@ button:hover{
   text-align: center;
   padding: 10px;
 }
-
 /* Create by Hongda Lin (7/1/2021) */
 #pt_link{
   width: 10%;
@@ -112,27 +81,49 @@ button:hover{
   text-align: center;
   padding: 10px;
 }
-
 /* Create by Hongda Lin (7/1/2021) */
 .pc_title, .pc_author, .pc_source{
   width: 30%;
   border: 2px solid black;
   text-align: center;
-  background-color: bisque;
   padding: 30px;
 }
-
 /* Create by Hongda Lin (7/1/2021) */
 .pc_link{
   text-align: center;
   border: 2px solid black;
-  background-color: bisque;
   padding: 30px;
+}
+/* Create by Hongda Lin (6/29/2021) */
+.publication_content button{
+  background: none;
+  color: #00008B;
+  border: 2px solid #FFD700;
+  padding: 5px 6px;
+  margin: 5px;
+  font-size: 1em;
+  transition: color 0.5s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+/* Create by Hongda Lin (6/29/2021) */
+.publication_content button:hover{
+  border-color: #FF1493;
+  color:red;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
 /* Create by Hongda Lin (6/29/2021) */
 .publication_content td:nth-child(3){
   font-style: italic;
+}
+/* Create by Hongda Lin (7/1/2021) */
+.publication_content tr:nth-last-of-type(2n){
+  background-color: beige;
+}
+/* Create by Hongda Lin (7/1/2021) */
+.publication_content tr:nth-last-of-type(2n+1){
+  background-color: lightgray;
 }
 
 /* Directions Page */
