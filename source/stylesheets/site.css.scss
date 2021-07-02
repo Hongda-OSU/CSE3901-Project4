@@ -1,28 +1,17 @@
+div {
+  background-color: #efefef;
+  padding: 25px;
+  margin: 0 250px 0;
+  border-radius: 25px;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+}
 
 /* Index page */
 
 /* Drew */
-.bodyHome {
-  color: #87919E;
-  background: #333333;
-}
-
-.h3Home {
-  height: 25px;
-  background: #333333;
-  text-align: center;
-  color: #87919E;
-  margin: 0;
-  padding: 0;
-}
-
-.h5Home {
-  height: 25px;
-  background: #333333;
-  text-align: center;
-  color: #87919E;
-  margin: 0;
-  padding: 0;
+table {
+  width: 100%;
 }
 
 .link_buttons {
@@ -122,11 +111,11 @@ button:hover{
 
 /* media page */
 
-.media_table {
+table {
   width: 100%;
 }
 
-.media_table th, .media_table td {
+th, td {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
@@ -205,7 +194,7 @@ button:hover{
 /* Directions Page */
 /* Create by Madison Graziani on 7/1/2021 */
 
-.directions_h1 {
+h1 {
   border-style: double;
   border-width: 7px;
   border-radius: 25px;
@@ -223,15 +212,6 @@ body > p{
   padding: 20px;
   width: 1200px;
   font-size: 24px;
-  font-family: Helvetica, sans-serif;
-}
-
-.directions_div{
-  background-color: #efefef;
-  padding: 25px;
-  margin: 0 250px 0;
-  border-radius: 25px;
-  font-size: 22px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -267,7 +247,7 @@ hr.break{
   color: #525252;
 }
 
-.directions_div > h3{
+div > h2{
   text-align: left;
   margin: 25px auto 10px;
   width: 1200px;
@@ -279,14 +259,3 @@ hr.break{
 /* Created 7/1/21 by Samuel Gernstetter */
 
 /* Created 7/1/21 by Samuel Gernstetter */
-table {
-  width: 100%;
-}
-
-/* Created 7/1/21 by Samuel Gernstetter */
-.teaching_table th, .teaching_table td {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
-

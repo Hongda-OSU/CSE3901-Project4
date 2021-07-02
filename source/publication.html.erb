@@ -5,9 +5,9 @@ title: Publications
 <!-- Created by Hongda Lin (6/29/2021) -->
 
 <!-- PUBLICATION TITLE -->
+
 <div>
   <h1 class="publication_header">Publications</h1>
-
   <!-- Use Mechanize and Nokogiri to get titles, authors, sources and links -->
   <%
     agent = Mechanize.new
@@ -78,11 +78,9 @@ title: Publications
       links << link
     end
   %>
-
   <!-- PUBLICATION CONTENT -->
-    <table class="publication_table">
-
-      <thead>
+  <table class="publication_table">
+    <thead>
       <tr>
         <% %w[Title Authors Source Link].each do |element|%>
           <% if element == "Title" %>
@@ -97,9 +95,8 @@ title: Publications
           <%= element%></th>
         <% end %>
       </tr>
-      </thead>
-
-      <tbody class="publication_content">
+    </thead>
+    <tbody class="publication_content">
       <% count.times do %>
         <tr>
           <td class="pc_title"><%= titles.shift %></td>
@@ -116,10 +113,7 @@ title: Publications
           </td>
         </tr>
       <% end %>
-      </tbody>
-
-    </table>
-  </div>
-
+    </tbody>
+  </table>
+</div>
 <%= partial "footer" %>
-
