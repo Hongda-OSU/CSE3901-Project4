@@ -7,16 +7,86 @@ div {
   font-family: Helvetica, sans-serif;
 }
 
-/* Index page */
-
-/* Drew */
 table {
   width: 100%;
 }
 
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+h1 {
+  border-style: double;
+  border-width: 7px;
+  border-radius: 25px;
+  border-color: #bb0000;
+  padding: 20px;
+  margin: auto;
+  width: 500px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+}
+
+h2{
+  text-align: left;
+  margin: 25px auto 10px;
+  width: 1200px;
+  color: #bb0000;
+}
+
+/* Directions Page */
+/* Create by Madison Graziani on 7/1/2021 */
+
+p{
+  margin: 20px auto;
+  padding: 20px;
+  width: 1200px;
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
+}
+
+hr.break{
+  width: 1400px;
+}
+
+ol{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+div > ol > li{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+div > ul > li{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+div > ul{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+div > ul > li > a:link{
+  color: #bb0000;
+}
+
+div > ul > li > a:visited{
+  color: #525252;
+}
+
+/* Index page */
+
+/* Drew */
+
 .link_buttons {
-  background: #333333;
-  color: #990100;
+  /*background: #333333;
+  color: #990100;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -87,18 +157,6 @@ button:hover{
   background-color: #bb0000;
 }
 
-/* media page */
-
-table {
-  width: 100%;
-}
-
-th, td {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
-
 /* Publication Page */
 
 /* Create by Hongda Lin (6/29/2021) */
@@ -166,69 +224,6 @@ th, td {
 /* Create by Hongda Lin (7/1/2021) */
 .publication_content tr:nth-last-of-type(2n+1){
   background-color: gainsboro;
-}
-
-/* Directions Page */
-/* Create by Madison Graziani on 7/1/2021 */
-
-h1 {
-  border-style: double;
-  border-width: 7px;
-  border-radius: 25px;
-  border-color: #bb0000;
-  padding: 20px;
-  margin: auto;
-  width: 500px;
-  text-align: center;
-  font-size: 40px;
-  font-family: Arial, sans-serif;
-}
-
-body > p{
-  margin: 20px auto;
-  padding: 20px;
-  width: 1200px;
-  font-size: 24px;
-  font-family: Helvetica, sans-serif;
-}
-
-hr.break{
-  width: 1400px;
-}
-
-ol{
-  width: 1100px;
-  margin: 10px auto;
-}
-
-div > ol > li{
-  width: 1100px;
-  margin: 10px auto;
-}
-
-div > ul > li{
-  width: 1100px;
-  margin: 10px auto;
-}
-
-div > ul{
-  width: 1100px;
-  margin: 10px auto;
-}
-
-div > ul > li > a:link{
-  color: #bb0000;
-}
-
-div > ul > li > a:visited{
-  color: #525252;
-}
-
-div > h2{
-  text-align: left;
-  margin: 25px auto 10px;
-  width: 1200px;
-  color: #bb0000;
 }
 
 /* teaching page */
