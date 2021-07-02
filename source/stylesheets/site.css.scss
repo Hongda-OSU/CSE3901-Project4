@@ -11,14 +11,17 @@
 
 .nav_bar > li{
   float: left;
-  border-right: 2px solid white;
+  border-right: 4px solid #e0e0e0;
+  border-bottom: 4px solid #525252;
 }
 
 .nav_bar > li a{
   display: block;
   color: white;
+  font-family: Monaco, Verdana, sans-serif;
   text-align: center;
-  padding: 14px 16px;
+  font-size: 22px;
+  padding: 14px 20px;
   text-decoration: none;
 }
 
@@ -127,6 +130,8 @@
 }
 
 /* Directions Page */
+/* Create by Madison Graziani on 7/1/2021 */
+
 .directions_title{
   border-style: double;
   border-width: 7px;
@@ -136,40 +141,46 @@
   margin: auto;
   width: 500px;
   text-align: center;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
 }
 
 body > p{
   margin: 20px auto;
   padding: 20px;
   width: 1200px;
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
 }
 
-div{
+.directions_div{
   background-color: #efefef;
   padding: 25px;
   margin: 0 250px 0;
   border-radius: 25px;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
 }
 
-hr{
+hr.break{
   width: 1400px;
 }
 
-div > ol{
+.directions_div > ol{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ol > ul{
+.directions_div > ol > ul{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > h3{
+.directions_div > h3{
   text-align: left;
   margin: 25px auto 10px;
   width: 1200px;
-
+  color: #bb0000;
 }
 
 /* teaching page */
