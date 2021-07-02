@@ -23,18 +23,27 @@ button{
   height: 50px;
   margin: 0;
   padding: 0 0 0 0;
-  background: #87919E;
+  background: #333333;
   font-style: italic;
-  color: #333333;
+  color: #87919E;
   border-right: 20px #990100;
   text-align: center;
 }
 
 .h3Home {
   height: 25px;
-  background: #87919E;
+  background: #333333;
   text-align: center;
-  color: #333333;
+  color: #87919E;
+  margin: 0;
+  padding: 0;
+}
+
+.h5Home {
+  height: 25px;
+  background: #333333;
+  text-align: center;
+  color: #87919E;
   margin: 0;
   padding: 0;
 }
@@ -98,7 +107,7 @@ a:visited {
 
 }
 
- */
+ /**/
 
 /* Create by Hongda Lin (6/29/2021) */
 /* Cool effect when hover over the button */
