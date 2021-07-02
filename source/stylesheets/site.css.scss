@@ -14,6 +14,90 @@ button{
 
 }
 
+/* Drew */
+.bodyHome {
+  color: #87919E;
+  background: #333333;
+}
+.h1Home {
+  height: 50px;
+  margin: 0;
+  padding: 0 0 0 0;
+  background: #87919E;
+  font-style: italic;
+  color: #333333;
+  border-right: 20px #990100;
+  text-align: center;
+}
+
+.h3Home {
+  height: 25px;
+  background: #87919E;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #b00;
+}
+a:visited {
+  color: #87919E;
+}
+
+.link_buttons {
+  background: #333333;
+  color: #990100;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px #990100;
+  margin-inline: auto;
+}
+
+.imgHome {
+  border-radius: 0px;
+  display: block;
+  margin-left: 0;
+  padding: 0;
+  width: 400px;
+  alignment: bottom;
+  float: right;
+}
+.ulHome {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 5px #990100;
+}
+.liHome {
+  display: inline;
+  border: 5px #990100;
+  padding: 4px;
+}
+
+.rectangleScarlet {
+  height: 25px;
+  background-color: #990100;
+}
+
+.footerHome {
+  background-color: #87919E;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  border-right: 20px #990100;
+}
+
+.pHome {
+  background: #87919E;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+
+}
+
  */
 
 /* Create by Hongda Lin (6/29/2021) */
@@ -39,14 +123,17 @@ button:hover{
 
 .nav_bar > li{
   float: left;
-  border-right: 2px solid white;
+  border-right: 4px solid #e0e0e0;
+  border-bottom: 4px solid #525252;
 }
 
 .nav_bar > li a{
   display: block;
   color: white;
+  font-family: Monaco, Verdana, sans-serif;
   text-align: center;
-  padding: 14px 16px;
+  font-size: 22px;
+  padding: 14px 20px;
   text-decoration: none;
 }
 
@@ -136,6 +223,8 @@ button:hover{
 }
 
 /* Directions Page */
+/* Create by Madison Graziani on 7/1/2021 */
+
 .directions_title{
   border-style: double;
   border-width: 7px;
@@ -145,40 +234,46 @@ button:hover{
   margin: auto;
   width: 500px;
   text-align: center;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
 }
 
 body > p{
   margin: 20px auto;
   padding: 20px;
   width: 1200px;
+  font-size: 24px;
+  font-family: Helvetica, sans-serif;
 }
 
-div{
+.directions_div{
   background-color: #efefef;
   padding: 25px;
   margin: 0 250px 0;
   border-radius: 25px;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
 }
 
-hr{
+hr.break{
   width: 1400px;
 }
 
-div > ol{
+.directions_div > ol{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > ol > ul{
+.directions_div > ol > ul{
   width: 1100px;
   margin: 10px auto;
 }
 
-div > h3{
+.directions_div > h3{
   text-align: left;
   margin: 25px auto 10px;
   width: 1200px;
-
+  color: #bb0000;
 }
 
 /* teaching page */
