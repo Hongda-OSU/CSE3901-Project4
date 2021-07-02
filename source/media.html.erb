@@ -2,9 +2,7 @@
 title: Media and Press
 ---
 
-<h1 class="media_header">
-  Media and Press
-</h1>
+<!-- Created 6/30/21 by Samuel Gernstetter -->
 
 
 <table class="media_table">
@@ -23,3 +21,7 @@ title: Media and Press
   </tr>
   <% end %>
 </table>
+
+<h1 class="media_header">Media and Press</h1>
+
+<%= partial "table", :locals => { :class_name => 'media_table', :headers => %w[Title Date Medium Source], :filename => data.media } %>

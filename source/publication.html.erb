@@ -1,34 +1,12 @@
 <!-- Created by Hongda Lin (6/29/2021) -->
 
 <!-- PUBLICATION TITLE -->
-<div>
+<div class="p_div">
   <h1 class="publication_header">James W. Davis, Publications</h1>
 </div>
 
-<!-- PUBLICATION CATEGORIZATION -->
-<div>
-  <table class="publication_table">
-    <thead>
-      <tr>
-        <% %w[Title Authors Source Link].each do |element|%>
-          <% if element == "Title" %>
-            <th id="pt_title">
-          <% elsif element == "Authors"%>
-            <th id="pt_author">
-          <% elsif element == "Source"%>
-            <th id="pt_source">
-          <% elsif element == "Link"%>
-            <th id="pt_link">
-          <% end %>
-          <%= element%></th>
-        <% end %>
-        </tr>
-    </thead>
-  </table>
-</div>
-
 <!-- PUBLICATION CONTENT -->
-<div>
+
   <!-- Use Mechanize and Nokogiri to get titles, authors, sources and links -->
   <%
     agent = Mechanize.new
@@ -100,27 +78,45 @@
     end
   %>
 
+  <!-- PUBLICATION CATEGORIZATION -->
+  <div class="p_div">
+    <table class="publication_table">
 
+      <thead>
+      <tr>
+        <% %w[Title Authors Source Link].each do |element|%>
+          <% if element == "Title" %>
+            <th id="pt_title">
+          <% elsif element == "Authors"%>
+            <th id="pt_author">
+          <% elsif element == "Source"%>
+            <th id="pt_source">
+          <% elsif element == "Link"%>
+            <th id="pt_link">
+          <% end %>
+          <%= element%></th>
+        <% end %>
+      </tr>
+      </thead>
 
-  <table class="publication_content">
-    <tbody>
-    <% count.times do %>
-    <tr>
-      <td class="pc_title"><%= titles.shift %></td>
-      <td class="pc_author"><%= authors.shift %></td>
-      <td class="pc_source"><%= sources.shift %></td>
-      <td class="pc_link">
-      <% if links[0] == "None" %>
-        <%= links.shift %>
-      <% elsif links[0].include? "audiomere" or links[0].include? "https"%>
-        <a href="<%= links.shift %>">Link</a>
-      <% else %>
-        <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
+      <tbody class="publication_content">
+      <% count.times do %>
+        <tr>
+          <td class="pc_title"><%= titles.shift %></td>
+          <td class="pc_author"><%= authors.shift %></td>
+          <td class="pc_source"><%= sources.shift %></td>
+          <td class="pc_link">
+            <% if links[0] == "None" %>
+              <%= links.shift %>
+            <% elsif links[0].include? "audiomere" or links[0].include? "https"%>
+              <a href="<%= links.shift %>">Link</a>
+            <% else %>
+              <a href="<%= "https://web.cse.ohio-state.edu/~davis.1719/".concat links.shift %>">Link</a>
+            <% end %>
+          </td>
+        </tr>
       <% end %>
-      </td>
-    </tr>
-    <% end %>
+      </tbody>
 
-    </tbody>
-  </table>
-</div>
+    </table>
+  </div>

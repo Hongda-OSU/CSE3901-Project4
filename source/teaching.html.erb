@@ -4,33 +4,6 @@ title: Teaching
 
 <!-- Created 7/1/21 by Samuel Gernstetter -->
 
-<h1 class="teaching_header">
-  Teaching
-</h1>
+<h1 class="teaching_header">Teaching</h1>
 
-<table class="teaching_table">
-  <tr>
-    <th>
-      Semester
-    </th>
-    <th>
-      Number
-    </th>
-    <th>
-      Title
-    </th>
-  </tr>
-  <% data.teaching.each do |semester, number, title| %>
-  <tr>
-    <td>
-      <%= semester %>
-    </td>
-    <td>
-      <%= number %>
-    </td>
-    <td>
-      <%= title %>
-    </td>
-  </tr>
-  <% end %>
-</table>
+<%= partial "table", :locals => { :class_name => 'teaching_table', :headers => %w[Semester Number Title], :filename => data.teaching } %>
