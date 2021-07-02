@@ -156,17 +156,20 @@ button:hover{
 /* Publication Page */
 
 /* Create by Hongda Lin (6/29/2021) */
+
 .publication_header{
   padding: 10px;
   font-family: 'Kaushan Script', cursive, sans-serif;
   font-size: 60px;
   text-align: center;
-  margin-bottom: 10px;
+  background-color: gold;
+  margin: 5px;
 }
 /* Create by Hongda Lin (6/29/2021) */
 .publication_table{
   width: 100%;
   padding: 20px 0px;
+  background-color: hsl(0, 0%, 96%);
 }
 /* Create by Hongda Lin (7/1/2021) */
 #pt_title, #pt_author, #pt_source{
@@ -203,6 +206,12 @@ button:hover{
   text-align: center;
   padding: 20px 0px 20px 0px;
   font-size: 20px;
+}
+.publication_content a:link, a:visited {
+  color: darkblue;
+}
+.publication_content a:hover, a:active {
+  color: red;
 }
 /* Create by Hongda Lin (6/29/2021) */
 .publication_content td:nth-child(3){
