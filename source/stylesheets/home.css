@@ -1,8 +1,8 @@
-body {
+.bodyHome {
     color: #87919E;
     background: #333333;
 }
-h1 {
+.h1Home {
     height: 50px;
     margin: 0;
     padding: 0 0 0 0;
@@ -13,7 +13,7 @@ h1 {
     text-align: center;
 }
 
-h3 {
+.h3Home {
     height: 25px;
     background: #87919E;
     text-align: center;
@@ -39,7 +39,7 @@ a:visited {
     margin-inline: auto;
 }
 
-img {
+.imgHome {
     border-radius: 0px;
     display: block;
     margin-left: 0;
@@ -48,13 +48,13 @@ img {
     alignment: bottom;
     float: right;
 }
-ul {
+.ulHome {
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: 5px #990100;
 }
-li {
+.liHome {
     display: inline;
     border: 5px #990100;
     padding: 4px;
@@ -65,7 +65,7 @@ li {
     background-color: #990100;
 }
 
-footer {
+.footerHome {
     background-color: #87919E;
     color: #333333;
     margin: 0;
@@ -73,7 +73,7 @@ footer {
     border-right: 20px #990100;
 }
 
-p {
+.pHome {
     background: #87919E;
     color: #333333;
     margin: 0;
