@@ -9,9 +9,18 @@
 
 .h3Home {
   height: 25px;
-  background: #87919E;
+  background: #333333;
   text-align: center;
-  color: #333333;
+  color: #87919E;
+  margin: 0;
+  padding: 0;
+}
+
+.h5Home {
+  height: 25px;
+  background: #333333;
+  text-align: center;
+  color: #87919E;
   margin: 0;
   padding: 0;
 }
@@ -67,6 +76,21 @@
   padding: 0;
 
 }
+
+ /**/
+
+/* Create by Hongda Lin (6/29/2021) */
+/* Cool effect when hover over the button */
+/*
+button:hover{
+  border-color: #FF1493;
+  color:red;
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+ */
 
 .nav_bar{
   list-style-type: none;
