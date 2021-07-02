@@ -189,7 +189,6 @@ a:visited {
   background-color: gainsboro;
 }
 
-
 /* Directions Page */
 /* Create by Madison Graziani on 7/1/2021 */
 
@@ -232,9 +231,27 @@ hr.break{
   margin: 10px auto;
 }
 
-.directions_div > ol > ul{
+.directions_div > ol > li{
   width: 1100px;
   margin: 10px auto;
+}
+
+.directions_div > ul > li{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+.directions_div > ul{
+  width: 1100px;
+  margin: 10px auto;
+}
+
+.directions_div > ul > li > a:link{
+  color: #bb0000;
+}
+
+.directions_div > ul > li > a:visited{
+  color: #525252;
 }
 
 .directions_div > h3{
