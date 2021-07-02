@@ -1,7 +1,18 @@
+div {
+  background-color: #efefef;
+  padding: 25px;
+  margin: 0 250px 0;
+  border-radius: 25px;
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+}
 
 /* Index page */
 
 /* Drew */
+table {
+  width: 100%;
+}
 
 .link_buttons {
   background: #333333;
@@ -77,6 +88,10 @@ button:hover{
 }
 
 /* media page */
+
+table {
+  width: 100%;
+}
 
 th, td {
   border: 1px solid #dddddd;
@@ -156,7 +171,7 @@ th, td {
 /* Directions Page */
 /* Create by Madison Graziani on 7/1/2021 */
 
-.directions_h1 {
+h1 {
   border-style: double;
   border-width: 7px;
   border-radius: 25px;
@@ -174,15 +189,6 @@ body > p{
   padding: 20px;
   width: 1200px;
   font-size: 24px;
-  font-family: Helvetica, sans-serif;
-}
-
-div {
-  background-color: #efefef;
-  padding: 25px;
-  margin: 0 250px 0;
-  border-radius: 25px;
-  font-size: 22px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -218,7 +224,7 @@ div > ul > li > a:visited{
   color: #525252;
 }
 
-div > h3{
+div > h2{
   text-align: left;
   margin: 25px auto 10px;
   width: 1200px;
@@ -230,6 +236,3 @@ div > h3{
 /* Created 7/1/21 by Samuel Gernstetter */
 
 /* Created 7/1/21 by Samuel Gernstetter */
-table {
-  width: 100%;
-}
