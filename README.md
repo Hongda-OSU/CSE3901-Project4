@@ -12,7 +12,8 @@ Please list who did what for each part of the project.
 Also list if people worked together (pair programmed) on a particular section.
   
 * Hongda Lin: 
-  * 
+  * Wrote the Publication page
+  * Wrote the css rules for Publication page
           
 * Drew Jackson: 
   * Wrote the HTML and CSS for the home page
